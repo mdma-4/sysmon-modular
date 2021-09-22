@@ -1,0 +1,11 @@
+<Sysmon schemaversion="4.30">
+  <EventFiltering>
+    <RuleGroup name="" groupRelation="or">
+      <ProcessAccess onmatch="exclude">
+        <SourceImage condition="end with">\Spotfire.Dxp.exe</SourceImage>
+		<SourceImage condition="end with">\Spotfire.Dxp.Cef.SubProcess.exe</SourceImage>
+		
+      </ProcessAccess>
+    </RuleGroup>
+  </EventFiltering>
+</Sysmon>
